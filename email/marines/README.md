@@ -71,11 +71,19 @@ as imagens, assets referenciados vs. presentes, e as URLs do texto puro.
   (`2005 SW 20th St, Ste 105, Fort Lauderdale, FL 33315`) em vez de
   `*|LIST:ADDRESS|*`, para garantir o endereço da YachtPro mesmo que a
   configuração da audience esteja diferente.
-- **Largura 800px**, como no design original. É mais largo que os 600px
-  convencionais; abaixo de 640px o layout empilha em coluna única.
-- **Imagens de produto** têm origem em 248x331px, exibidas a 225x238 —
-  só 1,1x, então ficam levemente suaves em tela retina. Precisaria de
-  arte em resolução maior para melhorar.
+- **Largura 600px**, o padrão de e-mail. A geometria foi reescalada em
+  0,75 a partir dos 800px do design original (paddings, colunas, imagens,
+  botões), mas a tipografia **não** acompanhou linearmente: corpo de texto
+  tem piso de 14px, texto auxiliar de 12px e os botões mantêm 48px de
+  altura de toque. As bullets de produto subiram de 11px para 12px.
+  Abaixo de 600px o layout empilha em coluna única.
+- **Imagens de produto** têm origem em 248x331px e são exibidas a
+  168x178, o que dá 1,5x — aceitável em retina. Os demais assets são
+  exportados em 2x exato da dimensão de exibição.
+- **Coluna das bullets do card** tem 142px no desktop, o que deixa as
+  linhas curtas e com bastante quebra. É consequência do texto longo em
+  grade de 3 colunas a 600px, não do layout. Se incomodar, as saídas são
+  encurtar as bullets ou passar a grade para 2 colunas.
 - **Cantos arredondados** usam `border-radius`; o Outlook desktop ignora
   e mostra cantos retos. Degradação aceitável.
 - **Fontes** (Montserrat, Poppins, Work Sans) vêm por `@import` do Google
