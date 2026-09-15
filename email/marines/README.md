@@ -44,7 +44,7 @@ que ignoram o campo do Mailchimp.
 Todos os destinos apontam para a landing page com o UTM completo:
 
 ```
-https://us8kmm-n0.myshopify.com/?utm_source=mailchimp&utm_medium=email&utm_campaign=bogo_sept2026&utm_content=marine
+https://bogo.malborcoatings.com/?utm_source=mailchimp&utm_medium=email&utm_campaign=bogo_sept2026&utm_content=marine
 ```
 
 São 13 links no DOM (2 botões CTA, hero, imagem do intro, 3 imagens de
@@ -61,7 +61,7 @@ node check.mjs                # CHROME_PATH=<binario> se o Chromium estiver nout
 ```
 
 Cobre: host e os 4 UTMs de cada link (inclusive os do Outlook/VML),
-que nenhum link myshopify.com fique sem UTM, `*|UNSUB|*` como âncora clicável, endereço
+ausência de `myshopify.com`, `*|UNSUB|*` como âncora clicável, endereço
 físico CAN-SPAM da YachtPro, título e preheader, `alt` e `width` em todas
 as imagens, assets referenciados vs. presentes, e as URLs do texto puro.
 
@@ -71,14 +71,6 @@ as imagens, assets referenciados vs. presentes, e as URLs do texto puro.
   (`2005 SW 20th St, Ste 105, Fort Lauderdale, FL 33315`) em vez de
   `*|LIST:ADDRESS|*`, para garantir o endereço da YachtPro mesmo que a
   configuração da audience esteja diferente.
-- **Destino é o domínio interno da Shopify** (`us8kmm-n0.myshopify.com`),
-  alterado a pedido em 15/09/2026; antes era `bogo.malborcoatings.com`.
-  Atenção: a Shopify normalmente 301-redireciona o domínio `.myshopify.com`
-  para o domínio primário da loja, então o clique pode acabar em
-  `bogo.malborcoatings.com` de qualquer forma. Não foi possível confirmar
-  daqui — o proxy do ambiente bloqueia os dois hosts com 403. Os UTMs
-  sobrevivem ao redirect. Reverter é um `sed` de um host só, nos três
-  arquivos.
 - **Largura 800px**, como no design original. É mais largo que os 600px
   convencionais; abaixo de 640px o layout empilha em coluna única.
 - **Imagens de produto** têm origem em 248x331px, exibidas a 225x238 —

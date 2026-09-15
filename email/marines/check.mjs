@@ -7,7 +7,7 @@ const DIR = path.dirname(fileURLToPath(import.meta.url)) + "/";
 const CHROME = process.env.CHROME_PATH || "/opt/pw-browsers/chromium-1194/chrome-linux/chrome";
 const html = fs.readFileSync(DIR + "index.html", "utf8");
 const txt  = fs.readFileSync(DIR + "plain-text.txt", "utf8");
-const LP = "us8kmm-n0.myshopify.com";
+const LP = "bogo.malborcoatings.com";
 const UTM = { utm_source:"mailchimp", utm_medium:"email", utm_campaign:"bogo_sept2026", utm_content:"marine" };
 
 let fail = 0, warn = 0;
@@ -45,16 +45,9 @@ const vml = [...html.matchAll(/<v:roundrect[^>]*href="([^"]+)"/g)].map(m => m[1]
 if (!vml.length) bad("nenhum botao VML encontrado");
 vml.forEach((u, i) => { if (checkUrl(u, `VML #${i+1}`)) ok(`VML #${i+1} com UTM completo`); });
 
-console.log("\n3) SHOPIFY INTERNO (nenhum link sem UTM)");
-const shopUrls = [...(html + "\n" + txt).matchAll(/https?:\/\/[^\s"'<>]*myshopify\.com[^\s"'<>]*/gi)]
-  .map(m => m[0].replace(/&amp;/g, "&"));
-const semUtm = shopUrls.filter(u => {
-  try { const p = new URL(u); return Object.entries(UTM).some(([k, v]) => p.searchParams.get(k) !== v); }
-  catch { return true; }
-});
-if (!shopUrls.length) ok("nenhuma URL myshopify.com no material");
-else if (semUtm.length) bad(`${semUtm.length} link(s) myshopify.com sem UTM completo: ${semUtm[0]}`);
-else ok(`${shopUrls.length} URLs myshopify.com, todas com os 4 UTMs`);
+console.log("\n3) SHOPIFY INTERNO");
+if (/myshopify\.com/i.test(html) || /myshopify\.com/i.test(txt)) bad("referencia a myshopify.com encontrada");
+else ok("nenhuma referencia a us8kmm-n0.myshopify.com");
 
 console.log("\n4) DESCADASTRO");
 html.includes("*|UNSUB|*") ? ok("*|UNSUB|* presente no HTML") : bad("*|UNSUB|* ausente no HTML");
