@@ -94,7 +94,16 @@ const txtUrls = [...txt.matchAll(/https?:\/\/\S+/g)].map(m => m[0]);
 txtUrls.forEach((u, i) => checkUrl(u, `texto puro #${i+1}`));
 txtUrls.length >= 2 ? ok(`${txtUrls.length} URLs no texto puro, todas com UTM`) : bad("poucas URLs no texto puro");
 
-console.log("\n9) PLACEHOLDER DE ASSETS");
+console.log("\n9) JANELA DA CAMPANHA");
+const WINDOW = { badge: /Valid September 16[^0-9]{1,8}30, 2026/, until: /through September 30 or until stock runs out\./ };
+WINDOW.badge.test(bodyText) ? ok("HTML: \"Valid September 16-30, 2026\"") : bad("HTML: data do badge incorreta");
+WINDOW.until.test(bodyText) ? ok("HTML: \"through September 30\"") : bad("HTML: data de encerramento incorreta");
+WINDOW.badge.test(txt) ? ok("texto puro: \"Valid September 16-30, 2026\"") : bad("texto puro: data do badge incorreta");
+WINDOW.until.test(txt) ? ok("texto puro: \"through September 30\"") : bad("texto puro: data de encerramento incorreta");
+const STALE = /September 29|September 15|15\s*[-\u2013]\s*29/;
+(STALE.test(bodyText) || STALE.test(txt)) ? bad("data antiga (15-29 / September 29) ainda presente") : ok("nenhuma data antiga remanescente");
+
+console.log("\n10) PLACEHOLDER DE ASSETS");
 const ph = (html.match(/ASSET-BASE-REPLACE-ME/g) || []).length;
 ph ? wrn(`${ph} ocorrencias de ASSET-BASE-REPLACE-ME (trocar pela URL do Mailchimp antes de enviar)`) : ok("sem placeholders");
 

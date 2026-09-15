@@ -163,7 +163,7 @@ export default function EmailPage() {
                 <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[24px] not-italic text-[#431307] text-[14px] uppercase whitespace-nowrap">every 3.78L gallon comes with a second gallon at no charge</p>
               </div>
             </div>
-            <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[1.6] not-italic text-[#726c5c] text-[14px] text-center w-full">through September 29 or until stock runs out.</p>
+            <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[1.6] not-italic text-[#726c5c] text-[14px] text-center w-full">through September 30 or until stock runs out.</p>
           </div>
         </div>
 
@@ -283,7 +283,7 @@ export default function EmailPage() {
                 {[
                   "Order direct from Malbor. Add two of the same 3.78L gallon to your cart. The second one is applied automatically at checkout — no code needed.",
                   "Buy 1 and Get 1 free on each 3.78L gallon, while stock lasts.",
-                  "Valid September 15–29, 2026",
+                  "Valid September 16–30, 2026",
                   "Local pickup in Safe Harbor Lauderdale Marine Center",
                 ].map((text, i) => (
                   <div key={i} className="flex gap-[13px] items-start w-full">

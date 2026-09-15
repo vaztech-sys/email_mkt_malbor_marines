@@ -151,7 +151,7 @@ function Frame1() {
           </div>
         </div>
       </div>
-      <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[1.6] min-w-full not-italic relative shrink-0 text-[#726c5c] text-[14px] text-center w-[min-content]">through September 29 or until stock runs out.</p>
+      <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[1.6] min-w-full not-italic relative shrink-0 text-[#726c5c] text-[14px] text-center w-[min-content]">through September 30 or until stock runs out.</p>
     </div>
   );
 }
@@ -514,7 +514,7 @@ function Frame6() {
         </svg>
       </div>
       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Poppins:Bold',sans-serif] justify-center leading-[0] min-w-px not-italic relative text-[#5c574c] text-[14px]">
-        <p className="leading-[1.6]">Valid September 15–29, 2026</p>
+        <p className="leading-[1.6]">Valid September 16–30, 2026</p>
       </div>
     </div>
   );
