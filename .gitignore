@@ -22,3 +22,6 @@ logs/
 
 # preview local gerado a partir de email/marines/index.html
 email/marines/_preview.html
+
+# pacote gerado por email/marines/build-zip.sh
+email/marines/bogo-marines-mailchimp.zip
