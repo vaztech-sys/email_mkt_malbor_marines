@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Poppins:SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://static.figma.com/font/Poppins-SemiBold_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter:Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://static.figma.com/font/Inter_1') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat:Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://static.figma.com/font/Montserrat_wght__2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins:Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://static.figma.com/font/Poppins-Regular_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat:Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://static.figma.com/font/Montserrat_wght__2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins:Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://static.figma.com/font/Poppins-Medium_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat:SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://static.figma.com/font/Montserrat_wght__2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins:Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://static.figma.com/font/Poppins-Bold_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Work_Sans:Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiAJoI3ZKyHaQQ.woff2') format('woff2');
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Create and manage professional web pages easily with intuitive tools designed for businesses and individuals seeking a strong online presence.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
