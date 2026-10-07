@@ -25,3 +25,8 @@ email/marines/_preview.html
 
 # pacote gerado por email/marines/build-zip.sh
 email/marines/bogo-marines-mailchimp.zip
+
+# pacotes gerados por email/*/build-zip.sh
+email/boatshow-e1/boatshow-e1-yachtpro.zip
+email/boatshow-e2/boatshow-e2-yachtpro.zip
+email/*/_preview.html
