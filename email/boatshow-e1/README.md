@@ -27,32 +27,31 @@ Destino de todos os links:
 https://bogo.malborcoatings.com/?utm_source=mailchimp&utm_medium=email&utm_campaign=boatshow_oct2026&utm_content=marine
 ```
 
-## PONTO DE TROCA — hero, arte final do Borges (seg 12/10)
+## Assets — todos finais
 
-As **fotos de produto são finais**: são as da loja, aplicadas em 09/10.
-Só o hero segue placeholder, hoje reusando o do BOGO. Está marcado no HTML
-com o comentário `TROCAR:`.
+Nenhum ponto de troca pendente. O verificador confirma com
+"sem pontos de troca pendentes".
 
-| Arquivo em `assets/` | Situação | Exibição | Exportar em |
+| Arquivo em `assets/` | Origem | Exibição | Exportado |
 |---|---|---|---|
-| `hero-showseason.jpg` | **pendente** | 600 × 270 | 1200 × 540 |
-| `product-deep-cleaning-apc.jpg` | final | 256 × 260 | 512 × 520 |
-| `product-max-pro-shampoo.jpg` | final | 256 × 260 | 512 × 520 |
-| `product-nano-polymer-marine.jpg` | final | 256 × 260 | 512 × 520 |
-| `product-hydro-coat.jpg` | final | 256 × 260 | 512 × 520 |
+| `hero-showseason.jpg` | veleiro envernizado na doca (09/10) | 600 × 270 | 1200 × 540 |
+| `product-deep-cleaning-apc.jpg` | foto da loja | 256 × 260 | 512 × 520 |
+| `product-max-pro-shampoo.jpg` | foto da loja | 256 × 260 | 512 × 520 |
+| `product-nano-polymer-marine.jpg` | foto da loja | 256 × 260 | 512 × 520 |
+| `product-hydro-coat.jpg` | foto da loja | 256 × 260 | 512 × 520 |
 
-As fotos entram por `contain` sobre `#f4f4f2`, o mesmo cinza da célula do
-card, então a garrafa aparece inteira sem corte e sem emenda no fundo.
+As fotos de produto entram por `contain` sobre `#f4f4f2`, o mesmo cinza da
+célula do card, então a garrafa aparece inteira sem corte e sem emenda.
+O hero foi recortado de 2000×1125 para 2000×900 (60px fora do topo, 165 da
+base), preservando o convés envernizado e reduzindo o deque de madeira.
 
-Duas observações sobre o material recebido:
+Dois pontos sobre o material:
 
-- **Só vieram os galões**, não as embalagens pequenas. O frame do card
-  mostra o galão; o brinde é comunicado na linha de texto
-  (`3.78L — $39 · free 473ml`). Se quiser o pequeno também na imagem,
-  precisa das 4 fotos das embalagens de 473ml/946ml.
-- **Hydro Coat veio em 450×600**, contra 1500×2000 das outras três. Ainda
-  cobre o 2× da exibição, mas é a única sem folga. Se houver original
-  maior, vale trocar.
+- **Só vieram os galões**, não as embalagens pequenas. O card mostra o
+  galão; o brinde é comunicado na linha de texto (`3.78L — $39 · free
+  473ml`). Para ter o pequeno na imagem, faltam as 4 fotos de 473ml/946ml.
+- **Hydro Coat veio em 450×600**, contra 1500×2000 das outras três. Cobre
+  o 2× da exibição, mas é a única sem folga.
 
 ## Verificação
 

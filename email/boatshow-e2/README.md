@@ -30,11 +30,11 @@ Destino de todos os links:
 https://bogo.malborcoatings.com/?utm_source=mailchimp&utm_medium=email&utm_campaign=boatshow_oct2026&utm_content=marine
 ```
 
-## PONTO DE TROCA — arte final do Borges, seg 12/10
+## Assets — todos finais
 
-`assets/hero-showseason.jpg` é placeholder, hoje reusando o hero do BOGO.
-Exibe a 600 × 270, exporte em 1200 × 540. No HTML está marcado com o
-comentário `TROCAR:`.
+`assets/hero-showseason.jpg` é a foto do veleiro envernizado na doca,
+aplicada em 09/10, a mesma do E1. Exibe a 600 × 270, exportada em
+1200 × 540. Nenhum ponto de troca pendente.
 
 ## Verificação e publicação
 
