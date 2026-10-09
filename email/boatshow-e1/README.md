@@ -7,7 +7,7 @@ Agendamento em qua 14/10. Nada foi criado no Mailchimp.
 |---|---|
 | `index.html` | HTML de e-mail, 600px, tabelas + CSS inline |
 | `plain-text.txt` | Versão texto puro |
-| `assets/` | 8 imagens |
+| `assets/` | 8 imagens (4 fotos de produto finais) |
 | `check.mjs` | Verificador da campanha |
 | `build-zip.sh` | Gera `boatshow-e1-yachtpro.zip` para o Import zip |
 
@@ -27,24 +27,32 @@ Destino de todos os links:
 https://bogo.malborcoatings.com/?utm_source=mailchimp&utm_medium=email&utm_campaign=boatshow_oct2026&utm_content=marine
 ```
 
-## PONTOS DE TROCA — arte final do Borges, seg 12/10
+## PONTO DE TROCA — hero, arte final do Borges (seg 12/10)
 
-As imagens de produto e o hero são **placeholders**. Os de produto trazem
-"ARTE PENDENTE · BORGES 12/10" impresso, para não passarem por arte final.
-No HTML cada ponto está marcado com o comentário `TROCAR:`.
+As **fotos de produto são finais**: são as da loja, aplicadas em 09/10.
+Só o hero segue placeholder, hoje reusando o do BOGO. Está marcado no HTML
+com o comentário `TROCAR:`.
 
-| Arquivo em `assets/` | O que entra | Dimensão de exibição |
-|---|---|---|
-| `hero-showseason.jpg` | hero de temporada (hoje reusa o do BOGO) | 600 × 270 |
-| `product-deep-cleaning-apc.png` | galão 3.78L + 473ml | 256 × 200 |
-| `product-max-pro-shampoo.png` | galão 3.78L + 946ml | 256 × 200 |
-| `product-nano-polymer-marine.png` | galão 3.78L + 473ml | 256 × 200 |
-| `product-hydro-coat.png` | galão 3.78L + 473ml | 256 × 200 |
+| Arquivo em `assets/` | Situação | Exibição | Exportar em |
+|---|---|---|---|
+| `hero-showseason.jpg` | **pendente** | 600 × 270 | 1200 × 540 |
+| `product-deep-cleaning-apc.jpg` | final | 256 × 260 | 512 × 520 |
+| `product-max-pro-shampoo.jpg` | final | 256 × 260 | 512 × 520 |
+| `product-nano-polymer-marine.jpg` | final | 256 × 260 | 512 × 520 |
+| `product-hydro-coat.jpg` | final | 256 × 260 | 512 × 520 |
 
-Exporte em **2× da exibição** (hero 1200×540, produtos 512×400), mantenha o
-nome do arquivo e rode `node check.mjs` depois. Não foi possível puxar as
-fotos da loja: `cdn.shopify.com` está bloqueado pela política de egresso
-deste ambiente (403 no CONNECT).
+As fotos entram por `contain` sobre `#f4f4f2`, o mesmo cinza da célula do
+card, então a garrafa aparece inteira sem corte e sem emenda no fundo.
+
+Duas observações sobre o material recebido:
+
+- **Só vieram os galões**, não as embalagens pequenas. O frame do card
+  mostra o galão; o brinde é comunicado na linha de texto
+  (`3.78L — $39 · free 473ml`). Se quiser o pequeno também na imagem,
+  precisa das 4 fotos das embalagens de 473ml/946ml.
+- **Hydro Coat veio em 450×600**, contra 1500×2000 das outras três. Ainda
+  cobre o 2× da exibição, mas é a única sem folga. Se houver original
+  maior, vale trocar.
 
 ## Verificação
 
